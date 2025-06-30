@@ -41,7 +41,6 @@ O formulário deverá ser preenchido **apenas pelo gerente do grupo** e deverá 
 
 ## 📚 Projetos por Grupo
 
-# 📘 Projetos Interdisciplinares – ADS | 2025-1
 
 > **ADS 1 Matutino e Noturno**
 
