@@ -41,8 +41,6 @@ O formulário deverá ser preenchido **apenas pelo gerente do grupo** e deverá 
 
 ## 📚 Projetos por Grupo
 
-# 📘 Projetos Interdisciplinares – ADS | 2025-1
-
 | Nome do Projeto | Link do Repositório no GitHub | Upload do Documento do Projeto | Descrição do Projeto | Nomes dos Alunos Participantes |
 |-----------------|-------------------------------|--------------------------------|----------------------|--------------------------------|
 | Sistema Landing Page Laboratório das Artes | [GitHub](https://github.com/users/username40440/projects/1/views/1?pane=issue&itemId=115769204&issue=username40440%7CBanco%7C1) | [Documento](https://drive.google.com/open?id=1Oqwm9eopqFf6xfPNDfIb889Z8i9gvUqY) | Criação de uma Landing Page para o Laboratório das Artes | João Pedro dos Santos Pinto, Tulio Lohas Faustino, Rafael Ribeiro de Lima Oliveira, Luís Gustavo Alves Ferreira, Guilherme Telles, Gabriel Antunes Messias |
