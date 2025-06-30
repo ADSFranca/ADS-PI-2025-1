@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Técnico - APAE Franca-SP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra lateral fixa com menu de navegação -->
+    <nav class="menu-lateral">
+        <header class="cabecalho-menu">
+            <h1>APAE Franca-SP</h1>
+        </header>
+        <ul>
+            <li><a href="#fila" class="ativo">Fila</a></li>
+            <li><a href="#ver-tickets">Ver Tickets</a></li>
+            <li><a href="#manutencoes-feitas">Manutenções Feitas</a></li>
+            <li><a href="#sair">Sair</a></li>
+        </ul>
+    </nav>
+
+    <!-- Área de conteúdo principal -->
+    <main class="conteudo-principal">
+        <!-- Seção Fila -->
+        <section id="fila" class="secao">
+            <header>
+                <h2>Fila de Chamados</h2>
+            </header>
+            <div class="conteudo-secao">
+                <ul class="lista-chamados">
+                    <li>Chamado #001 - Substituição de Luz da coordenação - Sala 3</li>
+                    <li>Chamado #002 - Trocar porta - Sala 5</li>
+                    <li>Chamado #003 - Rede instável - Setor Administrativo</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Ver Tickets -->
+        <section id="ver-tickets" class="secao">
+            <header>
+                <h2>Ver Tickets</h2>
+            </header>
+            <div class="conteudo-secao">
+                <table class="tabela-tickets">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descrição</th>
+                            <th>Status</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Impressora não funciona</td>
+                            <td>Em andamento</td>
+                            <td>04/06/2025</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Computador lento</td>
+                            <td>Pendente</td>
+                            <td>03/06/2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção Manutenções Feitas -->
+        <section id="manutencoes-feitas" class="secao">
+            <header>
+                <h2>Manutenções Feitas</h2>
+            </header>
+            <div class="conteudo-secao cartoes">
+                <div class="cartao">
+                    <h3>Manutenção #001</h3>
+                    <p>Substituição de Luz da coordenação - Sala 3</p>
+                    <p>Data: 02/06/2025</p>
+                </div>
+                <div class="cartao">
+                    <h3>Manutenção #002</h3>
+                    <p>Trocar porta - Sala 5</p>
+                    <p>Data: 01/06/2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

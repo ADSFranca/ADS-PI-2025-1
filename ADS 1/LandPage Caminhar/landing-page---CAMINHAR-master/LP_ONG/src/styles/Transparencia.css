@@ -1,0 +1,36 @@
+.descrição-transparencia{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+.conteudo-transparencia{
+  flex: 1;
+}
+
+.botoes-transparencia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.botoes-transparencia button {
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #c1005a; /* rosa escuro */
+  background-color: white;
+  border: 2px solid #c1005a;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botoes-transparencia button:hover {
+  background-color: #c1005a;
+  color: white;
+}

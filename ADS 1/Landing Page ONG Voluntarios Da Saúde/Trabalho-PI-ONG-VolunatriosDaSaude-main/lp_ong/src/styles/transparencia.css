@@ -1,0 +1,102 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.transparencia {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.titulo {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.icones-transparencia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.icones-transparencia .bloco {
+  max-width: 220px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* garante alinhamento ao topo */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.icones-transparencia .bloco img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+  display: block;
+  object-fit: contain;
+}
+
+.icones-transparencia h2 {
+  color: #c20000;
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.icones-transparencia p {
+  font-size: 14px;
+  color: #555;
+}
+
+.documentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.doc-card {
+  text-decoration: none;
+  border: 1px solid #eee;
+  width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.doc-card:hover {
+  transform: scale(1.03);
+}
+
+.doc-card img {
+  width: 100%;
+  height: auto;
+}
+
+.doc-card p {
+  background-color: #fff;
+  color: #d3006f;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.titulo-transparencia {
+  text-align: center;
+  font-size: 68px;
+  font-weight: 300;
+  color: #000; /* preto */
+  font-family: 'Arial', sans-serif; /* ou a fonte que você estiver usando */
+  margin-bottom: 150px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

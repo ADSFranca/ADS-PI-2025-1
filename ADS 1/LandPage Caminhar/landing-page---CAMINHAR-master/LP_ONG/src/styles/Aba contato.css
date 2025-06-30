@@ -1,0 +1,114 @@
+.map-block {
+  flex: 1;
+  min-width: 420px;
+}
+
+.location-title {
+  color: #005529;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.map-button {
+  display: block;
+  background-color: #ff008c;
+  color: white;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.map-button:hover {
+  background-color: #e0007a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-block {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  max-height: 350px;
+  background-color: #00833e;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex-direction: column; /* Adicione */
+  justify-content: space-between;
+}
+
+.contact-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlighted-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  color: white;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-map__container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.responsive-map{
+  width: 100%;
+  height: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 1 20px rgba(0, 0, 0, 0.15);
+}
+
+.location-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}

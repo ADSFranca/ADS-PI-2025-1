@@ -1,0 +1,86 @@
+:root{   /*paleta de cores aqui*/
+
+  /*Cores de fundos e detalhes*/
+  --cor1: #ffffff;
+  --cor2: #48a3c4;
+  --cor3: #1D424F;
+  --cor4: #00a99d;
+
+
+}
+
+
+
+@charset "UTF-8";
+/* CELULAR*/
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .menu-naveg {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .menu-naveg a {
+    padding: 0;
+  }
+}
+
+
+
+
+/* TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .menu-naveg {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .menu-naveg a {
+    padding: 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+}
+
+@media (max-width: 768px) {}

@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f4e9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.thank-you-card {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.thank-you-icon {
+    font-size: 80px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d4a017;
+    margin-bottom: 20px;
+}
+
+.donation-details {
+    background: #fff5d0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+#donationValue {
+    font-weight: bold;
+    color: #2a5c8b;
+}
+
+.btn-return {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d4a017;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-return:hover {
+    background: #b08d10;
+}

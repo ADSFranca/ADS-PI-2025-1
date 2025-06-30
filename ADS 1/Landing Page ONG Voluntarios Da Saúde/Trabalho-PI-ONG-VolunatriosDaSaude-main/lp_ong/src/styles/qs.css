@@ -1,0 +1,139 @@
+ /* ===== VARIÁVEIS DE CORES ===== */
+:root {
+  --color-primary-1: #8A002E;
+  --color-primary-2: #e8f0fe;
+  --color-primary-3: #d2e3fc;
+  --color-primary-4: #aecbfa;
+  --color-primary-5: #8ab4f8;
+  --color-primary-6: #ff0452;
+  --color-neutral-1: #202124;
+  --color-neutral-2: #5f6368;
+  --color-neutral-3: #dadce0;
+  --color-neutral-4: #f8f9fa;
+}
+ /* Sobre Nós */
+.quem-somos {
+ padding: 0;
+ background-color: white;
+}
+        
+.quem-somos p {
+margin-bottom: 20px;
+text-align: justify;
+}
+
+.qs_container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titulo-qs{
+  text-align: center;
+  padding: 60px 10px;
+}
+
+.quote {
+font-style: 'Roboto', sans-serif;
+ font-size: 1.2rem;
+ text-align: center;
+ margin: 30px 0;
+ color: var(--color-neutral-2);
+ font-weight: bold;
+}
+
+.background-decoracao {
+      position: absolute;
+      top: 270px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+      z-index: -1;
+    }
+
+    .background-decoracao img {
+      position: absolute;
+      top: 30%;
+      left: -30%;
+      width: 130vw;
+      transform: rotate(-25deg); /* Inclinando a imagem como no Figma */
+      opacity: 0.9;
+    }
+
+    .secao-cards {
+      text-align: center;
+    }
+
+    .titulo-cards {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding: 60px 10px;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .cards {
+      background-color: #fde7c5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .cards i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .cards img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .cards h3 {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .cards p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .team-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+    }
+
+    .team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+.icon img {
+  width: 150px;
+  height: auto;
+}
+

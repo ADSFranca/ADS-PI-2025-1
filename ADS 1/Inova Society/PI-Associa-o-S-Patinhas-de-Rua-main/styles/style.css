@@ -1,0 +1,1045 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: #F5F5F5; /* Cor de fundo clara */
+    font-family: poppinsbold, sans-serif; /* Fonte padrão */
+    color: black; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita barras de rolagem horizontal */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #4FC3F7; /* Cor de fundo azul */
+    padding: 8px 20px; /* Preenchimento interno */
+    position: sticky; /* Fixa o cabeçalho no topo */
+    top: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+/* Contêiner do cabeçalho */
+.header-container {
+    display: flex; /* Usa flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaça os elementos */
+    flex-wrap: nowrap; /* Evita quebra de linha */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Estilização do logo */
+.logo img {
+    height: 40px; /* Altura do logo */
+    vertical-align: middle; /* Alinha verticalmente */
+    margin-right: 10px; /* Margem à direita */
+}
+
+/* Título do cabeçalho */
+.tittle h1 {
+    color: white; /* Cor do texto */
+    font-size: 1.5em; /* Tamanho da fonte */
+    margin: 0; /* Remove margens */
+    display: inline-block; /* Alinha com outros elementos */
+    vertical-align: middle; /* Alinha verticalmente */
+}
+
+/* Navegação */
+.navbar {
+    margin-left: auto; /* Alinha à direita */
+}
+
+/* Botão de toggle do menu (hamburguer) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Lista do menu */
+.menu {
+    list-style: none; /* Remove marcadores */
+    display: flex; /* Usa flexbox */
+    gap: 10px; /* Espaço entre itens */
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+/* Itens do menu */
+.menu li {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza conteúdo */
+}
+
+/* Links do menu */
+.menu li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    padding: 8px 15px; /* Preenchimento */
+    border: 2px solid white; /* Borda branca */
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    white-space: nowrap; /* Evita quebra de texto */
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza texto */
+}
+
+/* Efeito hover nos links do menu */
+.menu li a:hover {
+    background-color: white; /* Fundo branco */
+    color: #4FC3F7; /* Cor do texto */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Seção hero */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover; /* Imagem de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    padding: 80px 0; /* Preenchimento vertical */
+    text-align: left; /* Alinhamento à esquerda */
+    margin: 0; /* Remove margens */
+}
+
+/* Contêiner da seção hero */
+.hero-container {
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Espaça elementos */
+    align-items: center; /* Alinha verticalmente */
+    gap: 40px; /* Espaço entre elementos */
+    flex-wrap: nowrap; /* Evita quebra */
+    max-width: 1100px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Texto da seção hero */
+.texto-hero {
+    flex: 1; /* Ocupa espaço disponível */
+    max-width: 600px; /* Largura máxima */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Título da seção hero */
+.texto-hero h2 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
+    color: black; /* Cor do texto */
+}
+
+/* Parágrafo da seção hero */
+.texto-hero p {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 30px; /* Margem inferior */
+    color: #4FC3F7; /* Cor do texto */
+}
+
+/* Contêiner de botões da seção hero */
+.texto-hero .btn-container {
+    display: flex; /* Usa flexbox */
+    gap: 10px; /* Espaço entre botões */
+    flex-wrap: wrap; /* Permite quebra */
+    justify-content: flex-start; /* Alinha à esquerda */
+}
+
+/* Botões da seção hero */
+.texto-hero .btn {
+    border: 2px solid #4FC3F7; /* Borda azul */
+    background-color: #4FC3F7; /* Fundo azul */
+    color: white; /* Cor do texto */
+    padding: 12px 30px; /* Preenchimento */
+    border-radius: 25px; /* Bordas arredondadas */
+    font-weight: bold; /* Peso da fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    margin-right: 10px; /* Margem à direita */
+    transition: transform 0.3s, background-color 0.3s; /* Transições suaves */
+}
+
+/* Efeito hover nos botões da seção hero */
+.texto-hero .btn:hover {
+    background-color: white; /* Fundo branco */
+    color: #4FC3F7; /* Cor do texto */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Imagem lateral da seção hero */
+.imagem-lateral img {
+    width: 350px; /* Largura da imagem */
+    height: auto; /* Altura automática */
+    border-radius: 50%; /* Forma circular */
+    background: radial-gradient(circle, #4FC3F7, #4FC3F7); /* Fundo gradiente */
+    padding: 20px; /* Preenchimento */
+    margin: 0 20px; /* Margem lateral */
+}
+
+/* Seção sobre nós */
+.sobre-nos {
+    text-align: center; /* Centraliza texto */
+    padding: 50px 20px; /* Preenchimento */
+    background-color: #F5F5F5; /* Cor de fundo */
+    margin-bottom: 50px; /* Margem inferior */
+}
+
+/* Título das seções */
+.titulo-sessao {
+    font-size: 2em; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    position: relative; /* Posicionamento relativo */
+    display: inline-block; /* Alinha com conteúdo */
+    font-weight: bold; /* Peso da fonte */
+    margin-bottom: 10px; /* Margem inferior */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Linha decorativa abaixo do título */
+.titulo-sessao::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Ocupa linha */
+    width: 80px; /* Largura */
+    height: 4px; /* Altura */
+    background-color: #26A69A; /* Cor verde */
+    margin: 20px auto 0; /* Margens */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Contêiner da seção sobre nós */
+.sobre-nos-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza */
+    gap: 40px; /* Espaço entre elementos */
+    flex-wrap: wrap; /* Permite quebra */
+    text-align: left; /* Alinhamento à esquerda */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Texto da seção sobre nós */
+.sobre-nos-texto {
+    flex: 1 1 500px; /* Flexível com largura mínima */
+    color: #333333; /* Cor do texto */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Texto em negrito */
+.sobre-nos-texto strong {
+    color: black; /* Cor do texto */
+}
+
+/* Subtítulo da seção sobre nós */
+.sobre-nos-texto h4 {
+    font-weight: bold; /* Peso da fonte */
+    margin-top: 20px; /* Margem superior */
+    color: black; /* Cor do texto */
+}
+
+/* Imagem da seção sobre nós */
+.sobre-nos-img {
+    flex: 1 1 400px; /* Flexível com largura mínima */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza */
+}
+
+/* Imagem dentro da seção sobre nós */
+.sobre-nos-img img {
+    max-width: 100%; /* Largura máxima */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Contêiner de cards */
+.cards-container {
+    display: flex; /* Usa flexbox */
+    gap: 20px; /* Espaço entre cards */
+    flex-wrap: wrap; /* Permite quebra */
+    justify-content: center; /* Centraliza */
+    margin-top: 30px; /* Margem superior */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Cards de informações */
+.infos {
+    height: 150px; /* Altura */
+    width: 150px; /* Largura */
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Preenchimento */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos cards */
+.infos:hover {
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Texto centralizado nos cards */
+.h5-centro {
+    text-align: center; /* Centraliza */
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Título nos cards */
+.h5-centro h1 {
+    font-size: 3rem; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Parágrafo nos cards */
+.h5-centro p {
+    margin: 0; /* Remove margens */
+    padding: 5px 0; /* Preenchimento vertical */
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza */
+}
+
+/* Estilização de outros cards */
+.infos-2card,
+.infos-3card {
+    background-color: #FFFFFF; /* Fundo branco */
+}
+
+/* Título das seções */
+.textos-titulo h1 {
+    text-align: center; /* Centraliza */
+    color: black; /* Cor do texto */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Linha decorativa abaixo do título */
+.textos-titulo::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Ocupa linha */
+    width: 80px; /* Largura */
+    height: 4px; /* Altura */
+    background-color: #26A69A; /* Cor verde */
+    margin: 20px auto 0; /* Margens */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Contêiner de cartões de ajuda */
+.cartoes-de-ajuda {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permite quebra */
+    gap: 20px; /* Espaço entre cartões */
+    justify-content: center; /* Centraliza */
+    margin: 40px auto; /* Margens */
+    max-width: 1200px; /* Largura máxima */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Cartão de ajuda */
+.cartao-ajuda {
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 30px 20px; /* Preenchimento */
+    text-align: center; /* Centraliza texto */
+    flex: 1 1 250px; /* Flexível com largura mínima */
+    max-width: 300px; /* Largura máxima */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos cartões de ajuda */
+.cartao-ajuda:hover {
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Ícone nos cartões de ajuda */
+.icone-ajuda {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: black; /* Cor do ícone */
+    margin-bottom: 15px; /* Margem inferior */
+}
+
+/* Título nos cartões de ajuda */
+.cartao-ajuda h3 {
+    margin-bottom: 10px; /* Margem inferior */
+    color: black; /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Parágrafo nos cartões de ajuda */
+.cartao-ajuda p {
+    font-size: 0.95rem; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Botão nos cartões de ajuda */
+.botao-ajuda {
+    display: inline-block; /* Alinha com texto */
+    padding: 10px 16px; /* Preenchimento */
+    background-color: #4FC3F7; /* Fundo azul */
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Peso da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover no botão de ajuda */
+.botao-ajuda:hover {
+    background-color: #29B6F6; /* Azul mais claro */
+}
+
+/* Botão de doação */
+.botao-ajuda.doar {
+    background-color: #4FC3F7; /* Fundo azul */
+}
+
+/* Efeito hover no botão de doação */
+.botao-ajuda.doar:hover {
+    background-color: #29B6F6; /* Azul mais claro */
+}
+
+/* Parágrafo nas seções */
+.textos-titulo p {
+    text-align: center; /* Centraliza */
+    color: black; /* Cor do texto */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Título da seção de voluntariado */
+.seja-voluntario-tittle {
+    text-align: center; /* Centraliza */
+    color: black; /* Cor do texto */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Linha decorativa abaixo do título de voluntariado */
+.seja-voluntario-tittle::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Ocupa linha */
+    width: 80px; /* Largura */
+    height: 4px; /* Altura */
+    background-color: #26A69A; /* Cor verde */
+    margin: 20px auto 0; /* Margens */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Texto da seção de voluntariado */
+.seja-voluntario-text::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Ocupa linha */
+    width: 80px; /* Largura */
+    height: 4px; /* Altura */
+    background-color: #26A69A; /* Cor verde */
+    margin: 20px auto 0; /* Margens */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Contêiner da seção de voluntariado */
+.voluntariado-container {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permite quebra */
+    align-items: center; /* Alinha verticalmente */
+    gap: 40px; /* Espaço entre elementos */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Imagem da seção de voluntariado */
+.voluntariado-img img {
+    width: 100%; /* Largura total */
+    max-width: 500px; /* Largura máxima */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+/* Texto da seção de voluntariado */
+.voluntariado-texto {
+    flex: 1; /* Ocupa espaço disponível */
+    min-width: 300px; /* Largura mínima */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Título do texto de voluntariado */
+.voluntariado-texto h2 {
+    font-size: 28px; /* Tamanho da fonte */
+    margin-bottom: 16px; /* Margem inferior */
+    color: black; /* Cor do texto */
+}
+
+/* Lista na seção de voluntariado */
+.voluntariado-texto ul {
+    list-style: none; /* Remove marcadores */
+    padding-left: 0; /* Remove preenchimento */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Itens da lista de voluntariado */
+.voluntariado-texto ul li {
+    margin-bottom: 10px; /* Margem inferior */
+    font-size: 18px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+}
+
+/* Texto adicional */
+.texto-e {
+    color: black; /* Cor do texto */
+}
+
+/* Botão de voluntariado */
+.btn-voluntario {
+    display: inline-block; /* Alinha com texto */
+    background-color: #4FC3F7; /* Fundo azul */
+    color: black; /* Cor do texto */
+    padding: 10px 20px; /* Preenchimento */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background 0.3s; /* Transição suave */
+    margin-top: 20px; /* Margem superior */
+}
+
+/* Efeito hover no botão de voluntariado */
+.btn-voluntario:hover {
+    background-color: #29B6F6; /* Azul mais claro */
+}
+
+/* Título da seção de contato */
+.titulo-contato {
+    text-align: center; /* Centraliza */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Linha decorativa abaixo do título de contato */
+.titulo-contato::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Ocupa linha */
+    width: 80px; /* Largura */
+    height: 4px; /* Altura */
+    background-color: #26A69A; /* Cor verde */
+    margin: 20px auto 0; /* Margens */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Cartões de redes sociais */
+.cartaoinstagram,
+.cartaofacebook {
+    background-color: white; /* Fundo branco */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra */
+    padding: 20px; /* Preenchimento */
+    width: 240px; /* Largura */
+    min-height: 360px; /* Altura mínima */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça conteúdo */
+    align-items: center; /* Centraliza horizontalmente */
+    transition: transform 0.3s; /* Transição suave */
+    text-align: center; /* Centraliza texto */
+    margin: 10px 15px; /* Margens */
+}
+
+/* Efeito hover nos cartões de redes sociais */
+.cartaoinstagram:hover,
+.cartaofacebook:hover {
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Logo das redes sociais */
+.logo-rede-social {
+    height: 15px; /* Altura */
+    width: 15px; /* Largura */
+}
+
+/* Logo da ONG */
+.logo-spdr {
+    height: 105px; /* Altura */
+    width: 105px; /* Largura */
+}
+
+/* Título da seção de doação */
+.titulo-doacao {
+    text-align: center; /* Centraliza */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Linha decorativa abaixo do título de doação */
+.titulo-doacao::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Ocupa linha */
+    width: 80px; /* Largura */
+    height: 4px; /* Altura */
+    background-color: #26A69A; /* Cor verde */
+    margin: 20px auto 0; /* Margens */
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+/* Imagem do QR Code */
+.qrcode-img {
+    width: 200px; /* Largura */
+    height: auto; /* Altura automática */
+    margin-bottom: 20px; /* Margem inferior */
+    display: block; /* Ocupa linha */
+    margin-left: auto; /* Centraliza */
+    margin-right: auto; /* Centraliza */
+}
+
+/* Dados do Pix */
+.dados-pix {
+    text-align: center; /* Centraliza */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    color: #333; /* Cor do texto */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Texto da seção de doação */
+.texto-doacao {
+    text-align: center; /* Centraliza */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #2b2b2b; /* Fundo escuro */
+    color: #fff; /* Cor do texto */
+    padding: 40px 20px 10px; /* Preenchimento */
+    font-family: Arial, sans-serif; /* Fonte */
+}
+
+/* Contêiner do rodapé */
+.rodape-container {
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permite quebra */
+    justify-content: space-between; /* Espaça elementos */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza */
+    gap: 40px; /* Espaço entre colunas */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Colunas do rodapé */
+.coluna {
+    flex: 1 1 250px; /* Flexível com largura mínima */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Título das colunas do rodapé */
+.coluna h3 {
+    font-size: 20px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Parágrafo nas colunas do rodapé */
+.coluna p {
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 5px; /* Margem superior */
+}
+
+/* Lista nas colunas do rodapé */
+.coluna ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove preenchimento */
+    margin: 0; /* Remove margens */
+}
+
+/* Itens da lista no rodapé */
+.coluna ul li {
+    margin-bottom: 8px; /* Margem inferior */
+}
+
+/* Links no rodapé */
+.coluna ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Efeito hover nos links do rodapé */
+.coluna ul li a:hover {
+    color: #90caf9; /* Cor azul clara */
+}
+
+/* Botão Pix no rodapé */
+.botao-pix {
+    background-color: #424242; /* Fundo cinza */
+    color: #fff; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 8px 16px; /* Preenchimento */
+    margin-right: 10px; /* Margem à direita */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Botão de doação no rodapé */
+.botao-doar {
+    display: inline-block; /* Alinha com texto */
+    margin-top: 10px; /* Margem superior */
+    background-color: #81c784; /* Fundo verde */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 18px; /* Preenchimento */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Peso da fonte */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+/* Efeito hover no botão de doação */
+.botao-doar:hover {
+    background-color: #66bb6a; /* Verde mais escuro */
+}
+
+/* Texto de copyright no rodapé */
+.rodape-copy {
+    text-align: center; /* Centraliza */
+    margin-top: 40px; /* Margem superior */
+    font-size: 13px; /* Tamanho da fonte */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Borda superior */
+    padding-top: 15px; /* Preenchimento superior */
+    padding-left: 15px; /* Preenchimento à esquerda */
+    padding-right: 15px; /* Preenchimento à direita */
+}
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    /* Ajustes no contêiner do cabeçalho */
+    .header-container {
+        flex-direction: column; /* Alinha verticalmente */
+        align-items: flex-start; /* Alinha à esquerda */
+        padding: 10px; /* Preenchimento */
+    }
+
+    /* Título do cabeçalho */
+    .tittle h1 {
+        font-size: 1.1em; /* Tamanho da fonte */
+        text-align: left; /* Alinhamento à esquerda */
+    }
+
+    /* Navegação */
+    .navbar {
+        width: 100%; /* Largura total */
+        margin-left: 0; /* Remove margem */
+    }
+
+    /* Botão de toggle do menu visível */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+    /* Itens do menu */
+    .menu li {
+        flex: 1 1 100%; /* Ocupa largura total */
+        max-width: 100%; /* Largura máxima */
+    }
+
+    /* Links do menu */
+    .menu li a {
+        font-size: 12px; /* Tamanho da fonte */
+        padding: 8px 12px; /* Preenchimento */
+        width: 100%; /* Largura total */
+        text-align: center; /* Centraliza texto */
+    }
+
+    /* Ajustes na seção hero */
+    .hero {
+        padding: 40px 0; /* Preenchimento vertical */
+    }
+
+    /* Contêiner da seção hero */
+    .hero-container {
+        flex-direction: column; /* Alinha verticalmente */
+        text-align: center; /* Centraliza texto */
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Texto da seção hero */
+    .texto-hero {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Título da seção hero */
+    .texto-hero h2 {
+        font-size: 1.8rem; /* Tamanho da fonte */
+    }
+
+    /* Parágrafo da seção hero */
+    .texto-hero p {
+        font-size: 1.2rem; /* Tamanho da fonte */
+        text-align: center; /* Centraliza */
+    }
+
+    /* Contêiner de botões */
+    .texto-hero .btn-container {
+        justify-content: center; /* Centraliza */
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Botões da seção hero */
+    .texto-hero .btn {
+        margin: 5px; /* Margem */
+        padding: 10px 25px; /* Preenchimento */
+        font-size: 14px; /* Tamanho da fonte */
+    }
+
+    /* Imagem lateral */
+    .imagem-lateral img {
+        width: 200px; /* Largura */
+        padding: 10px; /* Preenchimento */
+        margin: 0 20px; /* Margem lateral */
+    }
+
+    /* Seção sobre nós */
+    .sobre-nos {
+        padding: 40px 15px; /* Preenchimento */
+    }
+
+    /* Título da seção */
+    .titulo-sessao {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Contêiner da seção sobre nós */
+    .sobre-nos-container {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Texto da seção sobre nós */
+    .sobre-nos-texto {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Contêiner de cards */
+    .cards-container {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Cards de informações */
+    .infos {
+        width: 100%; /* Largura total */
+        max-width: 200px; /* Largura máxima */
+    }
+
+    /* Título das seções */
+    .textos-titulo h1 {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Parágrafo das seções */
+    .textos-titulo p {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Contêiner de cartões de ajuda */
+    .cartoes-de-ajuda {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Cartão de ajuda */
+    .cartao-ajuda {
+        flex: 1 1 100%; /* Ocupa largura total */
+        max-width: 100%; /* Largura máxima */
+    }
+
+    /* Título de voluntariado */
+    .seja-voluntario-tittle {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Contêiner de voluntariado */
+    .voluntariado-container {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Texto de voluntariado */
+    .voluntariado-texto {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Imagem de voluntariado */
+    .voluntariado-img img {
+        max-width: 100%; /* Largura máxima */
+    }
+
+    /* Título de contato */
+    .titulo-contato {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Cartões de redes sociais */
+    .cartaoinstagram,
+    .cartaofacebook {
+        width: 100%; /* Largura total */
+        max-width: 300px; /* Largura máxima */
+        margin: 10px 10px; /* Margens */
+    }
+
+    /* Título de doação */
+    .titulo-doacao {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Imagem do QR Code */
+    .qrcode-img {
+        width: 150px; /* Largura */
+    }
+
+    /* Dados do Pix */
+    .dados-pix {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Texto de doação */
+    .texto-doacao {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Rodapé */
+    .rodape {
+        padding: 30px 15px 10px; /* Preenchimento */
+    }
+
+    /* Contêiner do rodapé */
+    .rodape-container {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Colunas do rodapé */
+    .coluna {
+        padding: 0 10px; /* Preenchimento lateral */
+    }
+
+    /* Texto de copyright */
+    .rodape-copy {
+        padding-left: 10px; /* Preenchimento à esquerda */
+        padding-right: 10px; /* Preenchimento à direita */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes no cabeçalho */
+    header {
+        padding: 4px 0; /* Preenchimento vertical */
+    }
+
+    /* Contêiner do cabeçalho */
+    .header-container {
+        flex-direction: column; /* Alinha verticalmente */
+        align-items: center; /* Centraliza */
+        padding: 8px; /* Preenchimento */
+    }
+
+    /* Logo */
+    .logo img {
+        height: 25px; /* Altura */
+    }
+
+    /* Título */
+    .tittle h1 {
+        font-size: 1em; /* Tamanho da fonte */
+    }
+
+    /* Navegação */
+    .navbar {
+        width: 100%; /* Largura total */
+        margin-left: 0; /* Remove margem */
+    }
+
+    /* Menu */
+    .menu {
+        flex-direction: column; /* Alinha verticalmente */
+        gap: 6px; /* Espaço entre itens */
+        width: 100%; /* Largura total */
+    }
+
+    /* Itens do menu */
+    .menu li {
+        flex: 1 1 100%; /* Ocupa largura total */
+        max-width: 100%; /* Largura máxima */
+    }
+
+    /* Links do menu */
+    .menu li a {
+        font-size: 11px; /* Tamanho da fonte */
+        padding: 6px 10px; /* Preenchimento */
+    }
+
+    /* Seção hero */
+    .hero {
+        padding: 20px 0; /* Preenchimento vertical */
+    }
+
+    /* Contêiner da seção hero */
+    .hero-container {
+        flex-direction: column; /* Alinha verticalmente */
+        text-align: center; /* Centraliza texto */
+        padding: 0 5px; /* Preenchimento lateral */
+    }
+
+    /* Texto da seção hero */
+    .texto-hero {
+        padding: 0 5px; /* Preenchimento lateral */
+    }
+
+    /* Título da seção hero */
+    .texto-hero h2 {
+        font-size: 1.5rem; /* Tamanho da fonte */
+    }
+
+    /* Parágrafo da seção hero */
+    .texto-hero p {
+        font-size: 1rem; /* Tamanho da fonte */
+    }
+
+    /* Botões da seção hero */
+    .texto-hero .btn {
+        padding: 8px 20px; /* Preenchimento */
+        font-size: 12px; /* Tamanho da fonte */
+    }
+
+    /* Imagem lateral */
+    .imagem-lateral img {
+        width: 150px; /* Largura */
+        margin: 0 15px; /* Margem lateral */
+    }
+
+    /* Títulos das seções */
+    .titulo-sessao,
+    .textos-titulo h1,
+    .seja-voluntario-tittle,
+    .titulo-contato,
+    .titulo-doacao {
+        font-size: 1.5em; /* Tamanho da fonte */
+    }
+
+    /* Título do texto de voluntariado */
+    .voluntariado-texto h2 {
+        font-size: 22px; /* Tamanho da fonte */
+    }
+
+    /* Itens da lista de voluntariado */
+    .voluntariado-texto ul li {
+        font-size: 16px; /* Tamanho da fonte */
+    }
+}

@@ -1,0 +1,142 @@
+   /* --- ESTILOS DO RODAPÉ --- */
+.site-footer {
+    background-color: #333333; /* Cor de fundo escura, similar à imagem */
+    color: #FFFFFF;
+    padding: 30px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Colunas do rodapé */
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+/* Logo (Esquerda) */
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+}
+
+/* Informações Centrais */
+.footer-center {
+    text-align: left;
+}
+
+.footer-center h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.footer-center p {
+    margin: 0 0 15px;
+    line-height: 1.6;
+}
+
+.social-links-title {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.social-icons img {
+    width: 32px; /* Tamanho dos ícones */
+    height: 32px;
+}
+
+/* Mapa (Direita) */
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 300px; /* Largura máxima do mapa */
+    height: 150px; /* Altura do mapa */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #555;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Linha e Copyright */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #555555;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #AAAAAA;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-copyright a {
+    color: #E91E63; /* Cor rosa/vermelha para o link FATEC */
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para telas menores (Responsividade) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-center {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        display: flex;
+    }
+    
+     .social-icons a:last-child {
+        margin-right: 0;
+    }
+  }

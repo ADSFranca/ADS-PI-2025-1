@@ -1,0 +1,110 @@
+.descrição-evento {
+  justify-content: center;
+  text-align: justify;
+  flex: 1;
+  border-radius: 40px;
+  padding-top: 1.5rem;
+  margin: 30px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 2px 5px 20px rgb(145, 143, 143);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: #00833e;
+}
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  min-height: 30rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* diminuído */
+  margin-top: -1rem; /* menos espaço acima */
+  margin-bottom: 0.1rem; /* menos espaço abaixo */
+  padding: 0 1rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+.titulo-evento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateX(-100px);
+  margin-top: 1rem;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 15px;
+  margin: 0; /* evita espaço entre imagens */
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button,
+#next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 440px) {
+  .container-images {
+    width: 100%;
+    padding: 0 10px; /* espaço nas laterais */
+  }
+
+  .slider {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .titulo-evento {
+    font-size: 1.3rem;
+    transform: translateX(0); /* remove deslocamento */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .descrição-evento {
+    margin: 15px 10px 30px 10px;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  #prev-button,
+  #next-button {
+    width: 25px;
+    height: 25px;
+  }
+}

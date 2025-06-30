@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/navbar.css">
+
+    <title>Cadastro de Voluntário - Hospital</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="doacao.html"><img src="src/img/Amigos Solidários.png" alt="Amigos Solidários" class="nav_img"></a>
+
+
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="sobreNos.html">Sobre nós</a></li>
+                <li class="nav-item"><a href="transparencia.html">Transparencia</a></li>
+                <li class="nav-item"><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+
+            <div class="navbar-buttons">
+                <a href="seja_voluntario.html"><button class="btn-default2"><strong>Seja
+                            Voluntário</strong></button></a>
+                <a href="doacao.html" class="btn-default"><strong>Doe Agora</strong></a>
+            </div>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="lpong.html">Início</a></li>
+                <li class="nav-item"><a href="sobreNos.html">Sobre nós</a></li>
+                <li class="nav-item"><a href="transparencia.html">Transparencia</a></li>
+                <li class="nav-item"><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+            <button class="btn-default">Participe</button>
+        </div>
+    </header>
+    <main>
+        <section class="secao-voluntario">
+            <div class="formulario-container">
+                <h1 class="formulario-titulo">Cadastro de Voluntário</h1>
+                <form class="formulario-voluntario" action="https://formspree.io/f/xzzgjpbr" method="POST">
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" id="nome-completo" name="nome_completo" placeholder="Nome completo..."
+                        required />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu melhor E-mail..." required />
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone"
+                        placeholder="Insira seu melhor número pata contato..." required />
+
+                    <label for="disponibilidade">Disponibilidade</label>
+                    <select id="disponibilidade" name="disponibilidade" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="fim_de_semana">Final de semana</option>
+                        <option value="meio_de_semana">Meio de semana</option>
+                        <option value="ambos">Ambos</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva o por que deseja se voluntariar..."
+                        required></textarea>
+
+                    <!-- Proteção contra bots -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="hidden" name="_captcha" value="true">
+
+                    <!-- Redirecionamento pós envio -->
+                    <input type="hidden" name="_redirect"
+                        value="https://ryanmosc.github.io/Trabalho-PI-ONG-VolunatriosDaSaude/lp_ong/seja_voluntario.html">
+
+                    <button type="submit" class="botao-enviar" onclick="this.innerText='Enviando...';">Enviar
+                        Cadastro</button>
+
+                </form>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <hr class="footer-divider">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <img src="src/img/Amigos Solidários.png" alt="Logo Amigos Solidários Pedregulho-SP">
+                </a>
+            </div>
+
+            <div class="footer-center">
+                <h3>Santa Casa de Misericórdia de Pedregulho</h3>
+                <p>
+                    R. Ten. Salviana 125<br>
+                    Pedregulho, SP, 14470-000
+                </p>
+                <div class="social-links">
+                    <p class="social-links-title">Acompanhe nossas redes sociais</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                        </a>
+                        <a href="https://facebook.com/voluntariospedregulho" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                                alt="Facebook">
+                        </a>
+                        <a href="https://instagram.com/voluntariosdasaude36" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                                alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="map-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=R.%20Ten.%20Salviana%20125%20Pedregulho%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-copyright">
+            ©2025 Voluntários da Saúde. Todos os direitos Reservados. Desenvolvido por <a href="#" target="_blank">Devs
+                In
+                Action (FATEC)</a>
+        </div>
+    </footer>
+</body>
+<script src="src/scripts/seja_voluntario.js"></script>
+<script src="src/scripts/navbar.js"></script>
+
+</html>

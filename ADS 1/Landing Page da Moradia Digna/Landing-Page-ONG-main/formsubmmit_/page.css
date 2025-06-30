@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff9e6; /* Amarelo muito claro para fundo */
+    color: #333;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.logo-background {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.logo-background img {
+    width: 300px;
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.headerTWO {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #d4a017; /* Dourado/amarelo escuro para títulos */
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.header p {
+    color: #5a5a5a; /* Cinza escuro para texto */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.donation-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0e0a0; /* Borda amarela clara */
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #d4a017; /* Dourado/amarelo escuro */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #f0e0a0; /* Borda amarela clara */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background-color: #fffcf0; /* Fundo amarelo muito claro */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d4a017; /* Dourado no foco */
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.donation-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.donation-option {
+    flex: 1 1 calc(20% - 10px);
+    min-width: 80px;
+}
+
+.donation-option input[type="radio"] {
+    display: none;
+}
+
+.donation-option label {
+    display: block;
+    padding: 10px;
+    background-color: #fff5d0; /* Amarelo claro */
+    border: 1px solid #f0e0a0; /* Borda amarela clara */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #b08d10; /* Amarelo escuro */
+}
+
+.donation-option input[type="radio"]:checked + label {
+    background-color: #d4a017; /* Dourado */
+    color: white;
+    border-color: #d4a017; /* Dourado */
+}
+
+.other-amount {
+    margin-top: 15px;
+    display: none;
+}
+
+.other-amount.active {
+    display: block;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit {
+    background-color: #d4a017; /* Dourado */
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #b08d10; /* Dourado mais escuro no hover */
+}
+
+.btn-cancel {
+    background-color: #e0e0e0; /* Cinza claro */
+    color: #333;
+}
+
+.btn-cancel:hover {
+    background-color: #c8c8c8; /* Cinza médio no hover */
+}
+
+.error-message {
+    color: #c23b3b; /* Vermelho para erros */
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.error input,
+.error textarea {
+    border-color: #c23b3b !important; /* Vermelho para campos inválidos */
+}
+
+.error .error-message {
+    display: block;
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff5d0; /* Amarelo claro */
+    color: #b08d10; /* Amarelo escuro */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f0e0a0; /* Borda amarela clara */
+}
+
+@media (max-width: 768px) {
+    .donation-option {
+        flex: 1 1 calc(50% - 10px);
+    }
+    
+    .container {
+        padding: 20px 10px;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: none; /* Isso remove o redimensionamento */
+}
+
+.background-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('caminho/para/sua-imagem.jpg');
+    background-size: cover;          /* Cobrir toda a área mantendo proporções */
+    background-position: center center; /* Centraliza horizontal e verticalmente */
+    background-repeat: no-repeat;
+    background-attachment: fixed;    /* Fixa a imagem durante o scroll */
+    z-index: -1;
+    opacity: 0.3;
+    
+    /* Técnica avançada de centralização para diferentes tamanhos de tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Se estiver usando tag <img> dentro do container */
+.background-image-container img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    
+    /* Centralização perfeita */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Garante que a imagem cubra todo o espaço */
+    object-fit: cover;
+}
+
+/* Mantenha todo o CSS anterior e adicione: */
+
+.payment-method {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #fff5d0;
+    border-radius: 8px;
+    border: 1px solid #f0e0a0;
+}
+
+.payment-method h3 {
+    color: #d4a017;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.payment-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid #ddd;
+}
+
+.payment-option.active {
+    background-color: #d4a017;
+    color: white;
+    border-color: #d4a017;
+}
+
+.payment-option:hover {
+    background-color: #e8e8e8;
+}
+
+.payment-option.active:hover {
+    background-color: #b08d10;
+}
+
+/* Estilos para a seção PIX */
+.pix-section {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #fff5d0;
+    border-radius: 10px;
+    border: 1px solid #f0e0a0;
+}
+
+.pix-section h3 {
+    color: #d4a017;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.pix-details {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.pix-data {
+    flex: 1;
+}
+
+.pix-key {
+    background: white;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    border: 1px solid #f0e0a0;
+    word-break: break-all;
+}
+
+.btn-copy {
+    background-color: #d4a017;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-copy:hover {
+    background-color: #b08d10;
+}
+
+.pix-instructions {
+    margin-top: 20px;
+}
+
+.pix-instructions ol {
+    padding-left: 20px;
+}
+
+.pix-instructions li {
+    margin-bottom: 8px;
+}
+
+.pix-qr-code {
+    flex: 0 0 200px;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #f0e0a0;
+}
+
+.qr-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #5a5a5a;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .pix-details {
+        flex-direction: column;
+    }
+    
+    .pix-qr-code {
+        margin-top: 20px;
+    }
+}

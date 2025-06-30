@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="Amigos Solidários-favicon.png" type="image/x-icon">
+  <title>Voluntários da Saúde</title>
+<!--Link:CSS-->
+  <link rel="stylesheet" href="src/styles/lp.css">
+  <link rel="stylesheet" href="src/styles/footer.css">
+  <link rel="stylesheet" href="src/styles/navbar.css">
+  <!----------->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <a href="index.html"><img src="src/img/Amigos Solidários.png" alt="Amigos Solidários" class="nav_img"></a>
+
+
+      <ul id="nav_list">
+        <li class="nav-item active"><a href="index.html">Início</a></li>
+        <li class="nav-item"><a href="sobreNos.html">Sobre nós</a></li>
+        <li class="nav-item"><a href="transparencia.html">Transparencia</a></li>
+        <li class="nav-item"><a href="fale_conosco.html">Fale Conosco</a></li>
+      </ul>
+
+      <div class="navbar-buttons">
+        <a href="seja_voluntario.html"><button class="btn-default2"><strong>Seja Voluntário</strong></button></a>
+        <a href="doacao.html" class="btn-default"><strong>Doe Agora</strong></a>
+      </div>
+      <button id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="content">
+
+    <!-- BLOCO 1: Hero -->
+    <section id="home">
+      <div id="cta">
+        <h1 class="title">
+          Acolhendo com cuidado Promovendo <span>Bem-estar</span>
+        </h1>
+        <p class="description">
+          Somos o Centro Voluntários da Saúde, ao lado dos pacientes da Santa Casa de Pedregulho
+        </p>
+
+        <div id="cta_buttons">
+          <a href="seja_voluntario.html" class="btn-default">Seja Voluntario</a>
+        </div>
+
+        <div class="social-media-buttons">
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="banner_container">
+        <div class="shape"></div> <!--Fundo ciano-->
+        <!--imagem sobreposta-->
+        <img src="src/img/Mão Geométrica com Coração Branco.png" alt="imagem central" class="mao-banner">
+
+        <!--Quadrados-->
+        <div class="grid">
+          <div class="square yellow"></div>
+          <div class="square cyan"></div>
+          <div class="square gray"></div>
+          <div class="square red"></div>
+
+          <div class="square cyan"></div>
+          <div class="square lightgray"></div>
+          <div class="square orange"></div>
+
+          <div class=" s8 square red"></div>
+          <div class=" s9 square yellow"></div>
+          <div class=" s10 square lightgray"></div>
+        </div>
+        <!--Imagem da mão sobreposta-->
+
+      </div>
+    </section>
+
+    <!-- BLOCO 2: Benefícios -->
+    <section class="bloco beneficios">
+      <h2>Por que participar?</h2>
+      <div class="cartoes">
+        <div class="cartao">
+          <h3>🌟 Impacto real</h3>
+          <p>Suas ações contribuem diretamente para o bem-estar de pacientes.</p>
+        </div>
+        <div class="cartao">
+          <h3>❤️ Comunidade unida</h3>
+          <p>Você faz parte de um grupo solidário que promove encontros e apoio mútuo.</p>
+        </div>
+        <div class="cartao">
+          <h3>📈 Experiência enriquecedora</h3>
+          <p>Ganha aprendizado, reconhecimento e crescimento pessoal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 3: Eventos -->
+    <section class="eventos-atualizacoes">
+      <div class="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="evento-conteudo">
+          <div class="evento-card"><img src="adicionais/img_eventos/festa_junina.jpeg" alt="Evento 1"></div>
+          <div class="evento-card"><img src="adicionais/img_eventos/safari.jpeg" alt="Evento 2"></div>
+          <div class="evento-card"><img src="adicionais/img_eventos/pizza.jpeg" alt="Evento 3"></div>
+        </div>
+      </div>
+
+      <div class="atualizacoes">
+        <h2>Atualizações</h2>
+        <div class="cards-atualizacoes">
+          <a href="https://www.instagram.com/voluntariosdasaude36/ " target="_blank" rel="noopener noreferrer"
+            class="card-link-wrapper">
+            <div class="card-atualizacao">
+              <!--<span class="data">28 de fevereiro de 2025</span>-->
+              <img src="adicionais/img_atualizacoes/foto_premiacao.jpeg" alt="Reunião de fevereiro">
+              <p>Joao Moreno Junior, fundador da ONG Voluntarios da Saude, é parabenizado pelo seu esforço em prol de uma nobre causa.</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/voluntariosdasaude36/" target="_blank" rel="noopener noreferrer"
+            class="card-link-wrapper">
+            <div class="card-atualizacao">
+              <!--<span class="data">02 de janeiro de 2025</span>-->
+              <img src="adicionais/img_atualizacoes/festa_junina_valor.jpeg" alt="Nova diretoria">
+              <p>Festa Junina em prol da ONG é um sucesso e arrecada R$: 6.430,83.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 4: Depoimentos -->
+    <section class="bloco depoimentos" id="testimonials">
+      <h2>O que nossos voluntários dizem</h2>
+      <div class="depoimentos-grid">
+        <div class="depoimento">
+          <p>"Ser voluntária mudou minha vida. A ONG é organizada e acolhedora!"</p>
+          <span>– Ana P.</span>
+        </div>
+        <div class="depoimento">
+          <p>"Saber que estou ajudando alguém todo mês é gratificante. Recomendo demais!"</p>
+          <span>– Carlos M.</span>
+        </div>
+        <div class="depoimento">
+          <p>"A união do grupo e a energia nos eventos é contagiante. Vale a pena participar."</p>
+          <span>– Lúcia R.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCO 5: Formulário -->
+    <!--<section id="cadastro" class="bloco formulario">
+      <h2>Cadastre-se para ser voluntário</h2>
+      <form class="form-voluntario">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <input type="tel" name="telefone" placeholder="WhatsApp" />
+        <textarea name="mensagem" rows="4" placeholder="Por que deseja ser voluntário?" required></textarea>
+        <button type="submit" class="btn primario">Enviar cadastro</button>
+      </form>
+    </section>-->
+
+  </main>
+  <footer class="site-footer">
+    <hr class="footer-divider">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <a href="#" class="footer-logo">
+          <img src="src/img/Amigos Solidários.png" alt="Logo Amigos Solidários Pedregulho-SP">
+        </a>
+      </div>
+
+      <div class="footer-center">
+        <h3>Santa Casa de Misericórdia de Pedregulho</h3>
+        <p>
+          R. Ten. Salviana 125<br>
+          Pedregulho, SP, 14470-000
+        </p>
+        <div class="social-links">
+          <p class="social-links-title">Acompanhe nossas redes sociais</p>
+          <div class="social-icons">
+            <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://facebook.com/voluntariospedregulho" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="Facebook">
+            </a>
+            <a href="https://instagram.com/voluntariosdasaude36" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map-container">
+          <iframe
+            src="https://maps.google.com/maps?q=R.%20Ten.%20Salviana%20125%20Pedregulho%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-copyright">
+      ©2025 Voluntários da Saúde. Todos os direitos Reservados. Desenvolvido por <a href="#" target="_blank">Devs In
+        Action (FATEC)</a>
+    </div>
+  </footer>
+  <script src="src/scripts/navbar.js"></script>
+    <script src="src/scripts/index.js"></script>
+</body>
+
+</html>

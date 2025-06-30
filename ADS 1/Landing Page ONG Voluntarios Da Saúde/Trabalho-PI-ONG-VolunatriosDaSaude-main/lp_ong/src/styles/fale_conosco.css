@@ -1,0 +1,102 @@
+:root {
+  --color-primary-1: #8A002E;
+  --color-primary-2: #e8f0fe;
+  --color-primary-3: #d2e3fc;
+  --color-primary-4: #aecbfa;
+  --color-primary-5: #8ab4f8;
+  --color-primary-6: #ff0452;
+  --color-neutral-1: #202124;
+  --color-neutral-2: #5f6368;
+  --color-neutral-3: #dadce0;
+  --color-neutral-4: #f8f9fa;
+}
+
+.contact-section {
+  padding: 50px;
+  padding-top: 150px; 
+}
+
+.contact-container {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 400px;
+}
+
+.contact-form-area {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form-area h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.btn-formulario {
+  background-color: var(--color-primary-6);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-formulario:hover{
+  background-color: var(--color-primary-1);
+}
+
+.contact-info {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}

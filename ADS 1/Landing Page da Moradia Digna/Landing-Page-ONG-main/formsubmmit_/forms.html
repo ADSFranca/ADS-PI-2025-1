@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/moradia_digna_IIIcon.png" type="image/x-icon">
+    <title>Doação - Moradia Digna</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <div class="logo-background">
+        <img src="moradia_digna_logo.png" alt="Logo Moradia Digna">
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Quero ajudar – Moradia Digna</h1>
+        </div>
+        <div class="headerTWO">
+            <p>Sua doação transforma vidas. Com sua contribuição, ajudamos famílias a terem acesso a moradias mais
+                seguras e dignas.</p>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            <h2>Obrigado por sua doação!</h2>
+            <p>Sua contribuição será muito importante para ajudar famílias a terem uma moradia digna.</p>
+        </div>
+
+        <form id="donationForm" class="donation-form" action="https://formsubmit.co/leonardopradopessoni@gmail.com"
+            method="POST">
+            <div class="form-group">
+                <label for="fullName">Nome completo</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo">
+                <span class="error-message">Por favor, insira seu nome completo</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email para contato</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com">
+                <span class="error-message">Por favor, insira um email válido</span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone (WhatsApp)</label>
+                <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+                <span class="error-message">Por favor, insira um número de telefone válido</span>
+            </div>
+
+            <div class="form-group">
+                <label>Valor da doação</label>
+                <div class="donation-options">
+                    <div class="donation-option">
+                        <input type="radio" id="amount15" name="donationAmount" value="15">
+                        <label for="amount15">R$15</label>
+                    </div>
+                    <div class="donation-option">
+                        <input type="radio" id="amount30" name="donationAmount" value="30">
+                        <label for="amount30">R$30</label>
+                    </div>
+                    <div class="donation-option">
+                        <input type="radio" id="amount50" name="donationAmount" value="50">
+                        <label for="amount50">R$50</label>
+                    </div>
+                    <div class="donation-option">
+                        <input type="radio" id="amount100" name="donationAmount" value="100">
+                        <label for="amount100">R$100</label>
+                    </div>
+                    <div class="donation-option">
+                        <input type="radio" id="otherAmount" name="donationAmount" value="other">
+                        <label for="otherAmount">Outro valor</label>
+                    </div>
+                </div>
+                <div class="other-amount" id="otherAmountContainer">
+                    <input type="number" id="customAmount" name="customAmount" placeholder="Digite o valor desejado"
+                        min="1">
+                    <span class="error-message">Por favor, insira um valor válido</span>
+                </div>
+                <span class="error-message" id="amountError">Por favor, selecione um valor para doação</span>
+            </div>
+
+            <!-- Nova seção PIX -->
+            <div class="pix-section">
+                <div class="pix-info">
+                    <h3>Faça sua doação via PIX</h3>
+                    <div class="pix-details">
+                        <div class="pix-data">
+                            <p><strong>Chave PIX (CNPJ):</strong></p>
+                            <div class="pix-key">45.037.042/0001-35</div>
+                            <button class="btn-copy" onclick="copyPixKey()">Copiar Chave</button>
+
+                            <div class="pix-instructions">
+                                <h4>Como doar:</h4>
+                                <ol>
+                                    <li>Abra seu app de banco</li>
+                                    <li>Selecione "Pagar com PIX"</li>
+                                    <li>Escaneie o QR Code ou cole a chave</li>
+                                    <li>Confirme o pagamento</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="pix-qr-code">
+                            <div id="qrcode"></div>
+                            <img src="qr_code.png" alt="qr code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem (opcional)</label>
+                <textarea id="message" name="message" placeholder="Deixe uma mensagem se desejar..."></textarea>
+            </div>
+
+            <div class="form-actions">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://leonardo1124k.github.io/Landing-Page-ONG/formsubmmit_/two/page.html">
+                <button type="button" class="btn btn-cancel" id="cancelBtn">Cancelar</button>
+                <button type="submit" class="btn btn-submit" id="submitBtn">Confirmar Doação</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="bc.js"></script>
+</body>
+
+</html>

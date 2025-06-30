@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCE - Fatec</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+            display: block;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section h2 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .flex-item {
+            flex-grow: 1;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #e6f7ff;
+        }
+        .max-height-example {
+            max-height: 40rem; 
+            overflow-y: auto; 
+            border: 1px solid #0056b3;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Escolar Estadual Agostinho Lima de Vilhena</h1>
+        <p>Um universo de conhecimento ao seu alcance!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#apresentacao">Apresentação da Sala de Leitura</a></li>
+            <li><a href="#sobre">Sobre a Biblioteca</a></li>
+            <li><a href="#acervo">Nosso Acervo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="apresentacao" class="section">
+            <h2>Apresentação da Sala de Leitura</h2>
+            <p>Bem-vindos à nossa sala de leitura! Um espaço acolhedor e inspirador, projetado para fomentar o amor pela leitura e o aprendizado. Aqui, alunos e professores encontram um ambiente tranquilo para explorar novos mundos através dos livros, realizar pesquisas e desenvolver suas habilidades de leitura.</p>
+            <p>Nossa sala de leitura é mais do que um local para guardar livros; é um centro de atividades culturais e educacionais. Promovemos rodas de leitura, clubes do livro e eventos que incentivam a interação e o desenvolvimento intelectual de nossa comunidade escolar.</p>
+            <div class="gallery">
+                <img src="4c2ea7c7-cc98-4d5a-bf29-61d499ec431d.jpg" alt="Sala de Leitura 1">
+                <img src="a1f1663e-0d91-4867-baf5-ce304bc7f5fc.jpg" alt="Sala de Leitura 2">
+                <img src="df88df55-b5c9-41d3-85a7-62bdb3ff9651.jpg" alt="Sala de Leitura 3">
+            </div>
+            <p>Venha nos visitar e descubra um espaço feito para você!</p>
+        </section>
+
+        <section id="sobre" class="section">
+            <h2>Sobre a Biblioteca</h2>
+            <p>A Biblioteca Escolar Estadual Agostinho Lima de Vilhena tem como missão principal apoiar o processo de ensino-aprendizagem, oferecendo acesso a um vasto leque de recursos informacionais. Nosso objetivo é incentivar a leitura, a pesquisa e o pensamento crítico, contribuindo para a formação integral de nossos alunos.</p>
+            <p>Contamos com uma equipe dedicada pronta para auxiliar na busca por informações, orientar pesquisas e promover atividades que enriqueçam a experiência educacional de todos. Acreditamos que a biblioteca é um pilar fundamental na construção do conhecimento e no desenvolvimento cultural de nossa escola.</p>
+            <div class="flex-item">
+                <p>Nossa dedicação é para o seu aprendizado e crescimento.</p>
+            </div>
+        </section>
+
+        <section id="acervo" class="section">
+            <h2>Nosso Acervo</h2>
+            <p>Dispomos de um acervo diversificado, constantemente atualizado, que abrange diversas áreas do conhecimento. Você encontrará livros didáticos, literários (ficção e não-ficção), obras de referência, periódicos e recursos digitais para complementar seus estudos e leituras.</p>
+            <p>Nossas categorias incluem:</p>
+            <ul>
+                <li>Literatura Brasileira e Estrangeira</li>
+                <li>Ciências Exatas e da Natureza</li>
+                <li>Ciências Humanas e Sociais</li>
+                <li>História e Geografia</li>
+                <li>Artes e Cultura</li>
+                <li>Livros Infantis e Juvenis</li>
+                <li>Periódicos e Revistas</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <p>Para mais informações, dúvidas ou sugestões, entre em contato conosco:</p>
+            <p><strong>Telefone:</strong> (16)37217244</p>
+            <p><strong>Email:</strong> e070002a@educacao.sp.gov.br</p>
+            <p><strong>Endereço:</strong> RUA Luiz Rodrigues Pereira , 5446 - Jardim Noemia - Franca</p>
+            <p>Horário de Funcionamento: Segunda a Sexta-feira, das 8h às 17h.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Biblioteca Escolar Estadual Agostinho Lima de Vilhena. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
